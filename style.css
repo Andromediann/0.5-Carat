@@ -1,0 +1,444 @@
+/* Fonts */
+@font-face {
+  font-family: 'Wix Madefor Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Wix_Madefor_Text/static/WixMadeforText-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Alumni Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Alumni_Sans/static/AlumniSans-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Alumni Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/Alumni_Sans/static/AlumniSans-Light.ttf") format('truetype');
+}
+
+
+/* Сброс изначальных стилей */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+}
+
+li {
+	list-style-type: none;
+}
+
+button, input {
+	background: initial;
+	font-family: 'Montserrat', sans-serif;
+	border: 0px;
+	font-size: 16px;
+}
+
+html,
+body {
+	letter-spacing: 0.4px;
+	font-family: 'Wix Madefor Text', sans-serif;
+	height: 100%;
+	width: 100%;
+	line-height: 1.4;
+	font-weight: 400;
+	text-size-adjust: 100%;
+	font-size: 16px;
+	color: #021F27;
+	overflow-x: hidden;
+}
+
+
+/* Width 360px */
+
+/* Стили основной обертки сайта */
+.wrapper {
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+	padding: 40px 40px 60px;
+}
+
+
+/* Navigation */
+.nav {
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.1;
+}
+
+.language-selector__language {
+	margin-left: 15px;
+}
+
+.language-selector__language.current {
+	border-bottom: 1px solid #206CAB;
+}
+
+
+/* Main */
+.intro {
+	padding: 60px 40px 419px;
+	background-image: url("pictures/jeremy-bishop-h7bQ8VEZtws-unsplash360.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	margin-bottom: 119px;
+}
+
+.intro__logo {
+	width: 250px;
+	margin-left: 12px;
+	margin-bottom: 50px;
+}
+
+.intro__text {
+	font-family: 'Alumni Sans', sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 0.9;
+	max-width: 217px;
+}
+
+.intro__img {
+	position: absolute;
+	width: 168px;
+	bottom: -119px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+.about {
+	padding: 60px 40px;
+}
+
+.about__heading {
+	font-family: "Alumni Sans", sans-serif;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 0.8;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.about__text {
+	margin-bottom: 60px;
+}
+
+.about__image {
+	display: none;
+}
+
+
+.composition {
+	padding: 40px 40px 0;
+	background-image: url("pictures/cesar-couto-eIDXdlfelVE-unsplash\ 2.png");
+	background-repeat: no-repeat;
+	background-position: 52% 100%;
+	background-size: auto 55%;
+}
+
+.composition__heading {
+	color: #206CAB;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.composition__subheading {
+	font-family: "Alumni Sans", sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 1;
+	margin-bottom: 30px;
+}
+
+.composition__subheading span {
+	white-space: nowrap;
+}
+
+.composition__item {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #206CAB;
+}
+
+.composition__item:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.composition__subtext {
+	color: #206CAB;
+	font-size: 12px;
+}
+
+.composition__text {
+	font-family: "Alumni Sans", sans-serif;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 0.8;
+	margin-top: 280px;
+	max-width: 300px;
+}
+
+
+/* Footer */
+.footer {
+	padding: 60px 60px 80px;
+	background-color: #D4ECFB;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .nav {
+	max-width: 80px;
+	flex-wrap: wrap;
+}
+
+.footer .language-selector__language {
+	margin-right: 15px;
+	margin-left: 0;
+}
+
+.footer__logo {
+	width: 90px;
+}
+
+
+/* Width >360px */
+@media screen and (min-width: 361px) {
+	.header {
+		padding: 40px 60px 60px;
+	}
+
+
+	.intro {
+		padding-left: 60px;
+		padding-right: 60px;
+		background-image: url("pictures/jeremy-bishop-h7bQ8VEZtws-unsplash480.jpg");
+	}
+
+	.intro__logo {
+		width: 228px;
+		margin-left: 0;
+		margin-bottom: 60px;
+	}
+
+	.intro__text {
+		max-width: 100%;
+	}
+
+
+	.about {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+
+	.composition {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	.composition__subheading {
+		max-width: 350px;
+	}
+
+
+	.footer {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+
+
+/* Width >480px */
+@media screen and (min-width: 481px) {
+	.header {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.header .nav {
+		max-width: 250px;
+	}
+
+
+	.intro {
+		padding: 40px 100px 151px;
+		background-image: url("pictures/jeremy-bishop-h7bQ8VEZtws-unsplash960.jpg");
+	}
+
+	.intro__logo {
+		width: 300px;
+		margin-bottom: 40px;
+	}
+
+	.intro__text {
+		font-size: 52px;
+		font-weight: 300;
+		line-height: 0.8;
+		max-width: 515px;
+	}
+
+	.intro__img {
+		width: 225px;
+		transform: none;
+		left: auto;
+		bottom: auto;
+		right: 60px;
+		top: 40px;
+	}
+
+
+	.about {
+		padding-left: 100px;
+		padding-right: 280px;
+	}
+
+	.about__text:nth-child(2) {
+		padding-right: 10px;
+	}
+
+
+	.composition {
+		padding: 60px 100px 0;
+
+	}
+
+	.composition__wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+	}
+
+	.composition__block {
+		width: 100%;
+	}
+
+	.composition__text {
+		max-width: 100%;
+		font-size: 48px;
+		margin-top: 434px;
+	}
+
+
+	.footer {
+		padding: 94px 100px 80px;
+		align-items: baseline;
+	}
+
+	.footer .nav {
+		max-width: 100%;
+		gap: 60px;
+	}
+}
+
+
+/* Width >960px */
+@media screen and (min-width: 961px) {
+	.header {
+		padding-left: 380px;
+		padding-right: 380px;
+	}
+
+
+	.intro {
+		padding-left: 380px;
+		padding-right: 380px;
+		background-image: url("pictures/jeremy-bishop-h7bQ8VEZtws-unsplash1920.jpg");
+	}
+
+	.intro__img {
+		right: 380px;
+	}
+
+
+	.about {
+		padding-left: 380px;
+		padding-right: 380px;
+		display: flex;
+		gap: 80px;
+	}
+
+	.about__image {
+		display: block;
+		margin-top: 45px;
+		object-fit: contain;
+	}
+
+
+	.composition {
+		padding-left: 380px;
+		padding-right: 380px;
+		background-size: cover;
+	}
+
+	.composition__wrapper {
+		gap: 400px;
+	}
+
+
+	.footer {
+		padding-left: 380px;
+		padding-right: 380px;
+	}
+}
